@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>JavaScript Checkbox</title>
+</head>
+
+<body>
+    <p>Let see how to know if check box is checked:</p>
+    <label for="check">Checkbox:</label>
+    <input type="checkbox" id="check" onclick="checkfunction()">
+    <p id="message" style="display:none">Checkbox is Checked Now!</p>
+    <script>
+        function checkfunction() {
+            var check = document.getElementById("check");
+            var message = document.getElementById("message");
+            if (check.checked == true) {
+                message.style.display = "block";
+            } else {
+                message.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
